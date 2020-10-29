@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap");
+html {
+  font-family: "Kalam", cursive;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 80vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10% auto;
+}
+.todo-field {
+  display: flex;
+}
+#text {
+  color: gray;
+  width: 400px;
+  padding: 1rem;
+  font-size: large;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border: 1px solid rgba(124, 124, 124, 0.76);
+}
+#text:focus {
+  outline: none;
+  border: none;
+  box-shadow: 1px 1px 1px 1px lightgrey;
+}
+#button {
+  width: 108px;
+  padding: 1rem;
+  background-color: rgb(72, 158, 55);
+  border-radius: 3px;
+  color: white;
+  font-weight: 700;
+  font-size: large;
+  margin-left: 5px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+}
+#button:hover {
+  cursor: pointer;
+  background-color: rgba(26, 122, 7, 0.842);
+}
+.items {
+  width: 100%;
+  list-style-type: none;
+}
+.items li {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border: 1px solid gray;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  box-shadow: -1px 1px 1px 1px gray;
+  text-align: center;
+}
+.clear {
+  width: 100%;
+  padding: 5px;
+  text-align: center;
+  color: white;
+  margin-top: 10px;
+  background-image: linear-gradient(to bottom, red, rgba(190, 8, 8, 0.877));
+}
+.clear:hover {
+  background-image: linear-gradient(to top, red, rgba(190, 8, 8, 0.877));
+  cursor: pointer;
+}
