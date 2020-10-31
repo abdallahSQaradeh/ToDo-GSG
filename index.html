@@ -5,21 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>To Do</title>
     <link rel="stylesheet" type="text/css" href="./style/todo.style.css" />
+    <link rel="stylesheet" type="text/css" href="./style/todo.queries.css"
   </head>
   <body>
     <div class="container">
       <div class="todo">
         <div class="todo-field">
-          <input
-            type="text"
-            id="text"
-            name="text"
-            placeholder="Please enter item here :"
-          />
-          <div onclick="add()" id="button">add item</div>
+          <div class="input-valid">
+            <input
+              type="text"
+              class="text"
+              name="text"
+              placeholder="Please enter todo here :"
+            />
+            <p id="validation">please enter valid todo</p>
+          </div>
+
+          <div onclick="add()" id="button">add todo</div>
         </div>
-        <ul class="items"></ul>
-        <div class="clear" onclick="clearList()">clear</div>
+
+        <div class="clear" onclick="clearListHandler()">clear</div>
+      </div>
+      <ul class="items"></ul>
+    </div>
+    <div class="modal" onclick="dontClear()">
+      <div class="message">
+        <h2>Do You really want to clear the List?</h2>
+        <div class="answer">
+          <div class="yes" onclick="_clear()">yes</div>
+          <div class="no" onclick="dontClear()">no</div>
+        </div>
       </div>
     </div>
     <script src="./javascript/todo.js"></script>
