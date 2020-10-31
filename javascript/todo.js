@@ -31,8 +31,8 @@ const add = ()=> {
       const edit = document.createElement("img");
       const container = document.createElement("div")
       const textTODO = document.createElement("textarea");
-      edit.src="../assest/writing.svg";
-      remove.src="../assest/remove.svg";
+      edit.src="./assest/writing.svg";
+      remove.src="./assest/remove.svg";
       edit.style.width="40px"
       remove.style.width="40px"
       remove.classList.add("remove")
